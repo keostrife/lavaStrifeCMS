@@ -3,7 +3,7 @@
 @section('content')
 	<div id="wrapper">
 		<section>
-			<form action="/admin" method="post">
+			<form action="/admin/login" method="post">
 				<span class="error">{{{ isset($error["match"]) ? "Username or Password is not correct" : '' }}}</span><br>
 				<span class="error">{{{ isset($error["locked"]) ? "Username has been locked" : '' }}}</span><br>
 				<span class="error">{{{ isset($error["username"]) ? "Username is required!" : '' }}}</span><br>

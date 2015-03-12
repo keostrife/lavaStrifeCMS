@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AdminController' => $baseDir . '/app/controllers/AdminController.php',
+    'AdminSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
@@ -28,7 +30,10 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
-    'CreateUsersTable' => $baseDir . '/app/database/migrations/2015_01_20_164316_create_users_table.php',
+    'Content' => $baseDir . '/app/models/Content.php',
+    'CreateContentTable' => $baseDir . '/app/database/migrations/2015_03_03_201324_create_content_table.php',
+    'CreateLanguagesTable' => $baseDir . '/app/database/migrations/2015_01_22_204710_create_languages_table.php',
+    'CreateUsersTable' => $baseDir . '/app/database/migrations/2015_01_23_192510_create_users_table.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
@@ -422,6 +427,8 @@ return array(
     'Jeremeamia\\SuperClosure\\SerializableClosure' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/SerializableClosure.php',
     'Jeremeamia\\SuperClosure\\Visitor\\ClosureFinderVisitor' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/Visitor/ClosureFinderVisitor.php',
     'Jeremeamia\\SuperClosure\\Visitor\\MagicConstantVisitor' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/Visitor/MagicConstantVisitor.php',
+    'Language' => $baseDir . '/app/models/Language.php',
+    'LanguageSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'Math_BigInteger' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Math/BigInteger.php',
     'Monolog\\ErrorHandler' => $vendorDir . '/monolog/monolog/src/Monolog/ErrorHandler.php',
     'Monolog\\Formatter\\ChromePHPFormatter' => $vendorDir . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',
@@ -1253,6 +1260,7 @@ return array(
     'Symfony\\Component\\HttpKernel\\CacheWarmer\\CacheWarmerInterface' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/CacheWarmer/CacheWarmerInterface.php',
     'Symfony\\Component\\HttpKernel\\CacheWarmer\\WarmableInterface' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/CacheWarmer/WarmableInterface.php',
     'Symfony\\Component\\HttpKernel\\Client' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/Client.php',
+    'Symfony\\Component\\HttpKernel\\Config\\EnvParametersResource' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/Config/EnvParametersResource.php',
     'Symfony\\Component\\HttpKernel\\Config\\FileLocator' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/Config/FileLocator.php',
     'Symfony\\Component\\HttpKernel\\Controller\\ControllerReference' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/Controller/ControllerReference.php',
     'Symfony\\Component\\HttpKernel\\Controller\\ControllerResolver' => $vendorDir . '/symfony/http-kernel/Symfony/Component/HttpKernel/Controller/ControllerResolver.php',

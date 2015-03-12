@@ -5,10 +5,7 @@
 <!--
 <link rel="shortcut icon" href="/favicon.ico">
 -->
-<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
-<!--[if IE]>
-<link href="/assets/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<![endif]-->
+<link rel="stylesheet" href="/assets/css/admin.css">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -19,14 +16,13 @@
 	
 	@yield('content')
 
-	<script type="text/javascript" src="/assets/js/main.min.js"></script>
-	<!--
-	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-	-->
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="{{asset('assets/js/bootstrap.js')}}"></script>
+	<script src="{{asset('assets/js/app.js')}}"></script>
+	<script src="{{asset('assets/js/admin.js')}}"></script>
 	<script>
 		$(document).ready(function(){
-			//Stripe.setPublishableKey('[key]');
-			App.init();
+			BR.init();
 		});
 	</script>
 </body>

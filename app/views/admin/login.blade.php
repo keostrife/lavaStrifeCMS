@@ -10,7 +10,7 @@
 				User: <input type="text" name="username" id="username" required> <br>
 				<span class="error">{{{ isset($error["password"]) ? "Password is required!" : '' }}}</span><br>
 				Pass: <input type="password" name="password" id="password" required> <br>
-				Remember? <input type="checkbox" name="remember" id="remember"> <br>
+				Remember? <input type="checkbox" name="remember" id="remember" value="on"> <br>
 				<input type="submit" id="loginSubmit">
 			</form>
 		</section>
